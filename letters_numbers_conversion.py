@@ -4,10 +4,10 @@ def convert_to_numbers(input_string):
 
     input_list = list(input_string)
     new_list = []
-    
+
     for char in input_list:
         new_list.append(alph_list.index(char))
-        
+
     print(new_list)
 
 convert_to_numbers("hello")
