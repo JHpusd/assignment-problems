@@ -1,4 +1,7 @@
-alph_list = [" ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+alph_list = [
+    " ", "a", "b", "c", "d", "e", "f", "g", "h",
+    "i", "j", "k", "l", "m", "n", "o", "p", "q",
+    "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 
 def letters_to_numbers(input_string):
@@ -14,7 +17,9 @@ print("banana bread turns into:")
 print(letters_to_numbers("banana bread"))
 
 print("asserting letters_to_numbers works on 'banana bread' ...")
-assert letters_to_numbers("banana bread") == [2, 1, 14, 1, 14, 1, 0, 2, 18, 5, 1, 4], "Wrong, wrong, wrong, try again"
+assert letters_to_numbers("banana bread") == [
+    2, 1, 14, 1, 14, 1,
+    0, 2, 18, 5, 1, 4], "no"
 print("PASSED")
 
 print("\n")
@@ -31,6 +36,8 @@ def numbers_to_letters(input_list):
 print("[13, 18, 0, 19, 11, 25, 3, 1, 11] turns into:")
 print(numbers_to_letters([13, 18, 0, 19, 11, 25, 3, 1, 11]))
 
-print("asserting numbers_to_letters works on [13, 18, 0, 19, 11, 25, 3, 1, 11] ...")
-assert numbers_to_letters([13, 18, 0, 19, 11, 25, 3, 1, 11]) == "mr skycak", "Incorrect again. God, how many times do we have to do this."
+print('''asserting numbers_to_letters works on
+[13, 18, 0, 19, 11, 25, 3, 1, 11] ...''')
+assert numbers_to_letters([
+    13, 18, 0, 19, 11, 25, 3, 1, 11]) == "mr skycak", "Incorrect again."
 print("PASSED")
