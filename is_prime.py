@@ -2,7 +2,7 @@ def is_prime(input_num):
     assert input_num > 1, "Your number is too small"
 
     for num in range(2, input_num):
-        if (input_num/num) % 1 == 0:
+        if input_num % num == 0:
             return False
 
     return True
