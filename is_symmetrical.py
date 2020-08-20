@@ -6,7 +6,7 @@ def is_symmetric(input_string):
 
 print("tacocat: ")
 print(is_symmetric("tacocat"))
-print("testing is_symmetric on input 'tacocat'")
+print("asserting is_symmetric works on input 'tacocat'")
 assert is_symmetric("tacocat"), "Should be True"
 print("PASSED")
 
@@ -14,6 +14,6 @@ print("\n")
 
 print("banana: ")
 print(is_symmetric("banana"))
-print("testing is_symmetric on input 'banana'")
+print("asserting is_symmetric works on input 'banana'")
 assert not is_symmetric("banana"), "Should be False"
 print("PASSED")
