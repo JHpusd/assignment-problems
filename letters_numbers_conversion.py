@@ -3,6 +3,7 @@ alph_list = [
     "i", "j", "k", "l", "m", "n", "o", "p", "q",
     "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
+
 def letters_to_numbers(input_string):
     input_list = list(input_string)
     new_list = []
@@ -20,6 +21,7 @@ print("PASSED")
 print(letters_to_numbers("banana bread"))
 
 print("\n")
+
 
 def numbers_to_letters(input_list):
     new_string = ""
