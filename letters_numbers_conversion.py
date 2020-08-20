@@ -1,7 +1,7 @@
 alph_list = [" ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-def letters_to_numbers(input_string):
 
+def letters_to_numbers(input_string):
     input_list = list(input_string)
     new_list = []
 
@@ -18,8 +18,9 @@ assert letters_to_numbers("banana bread") == [2, 1, 14, 1, 14, 1, 0, 2, 18, 5, 1
 print("PASSED")
 
 print("\n")
-def numbers_to_letters(input_list):
 
+
+def numbers_to_letters(input_list):
     new_string = ""
 
     for num in input_list:
