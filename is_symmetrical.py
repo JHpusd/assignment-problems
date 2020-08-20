@@ -1,15 +1,18 @@
-
-user_input = input("")
-reverse_string = user_input[::-1]
-
 def is_symmetric(input_string):
+  reverse_string = input_string[::-1]
   if reverse_string == input_string:
-    print("{} is a palindrome".format(input_string))
+    return True
   else:
-    print("{} is not a palindrome".format(input_string))
+    return False
 
-is_symmetric(user_input)
+print("racecar: ")
+print(is_symmetric("racecar"))
+print("testing is_symmetric on input 'racecar'")
+assert is_symmetric("racecar") == True, "Should be True"
+print("PASSED")
 
-print("testing is_symmetric on input '{}' ...".format(user_input))
-assert user_input == reverse_string, "{} is not a palindrome".format(user_input)
+print("batman: ") 
+print(is_symmetric("batman"))
+print("testing is_symmetric on input 'batman'")
+assert is_symmetric("batman") == False, "Should be False"
 print("PASSED")
