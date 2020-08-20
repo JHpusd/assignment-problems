@@ -2,7 +2,7 @@ def is_symmetric(input_string):
     if input_string == input_string[::-1]:
         return True
     else:
-            return False
+        return False
 
 print("tacocat: ")
 print(is_symmetric("tacocat"))
