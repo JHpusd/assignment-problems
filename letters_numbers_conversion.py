@@ -3,7 +3,6 @@ alph_list = [
     "i", "j", "k", "l", "m", "n", "o", "p", "q",
     "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-
 def letters_to_numbers(input_string):
     input_list = list(input_string)
     new_list = []
@@ -13,17 +12,14 @@ def letters_to_numbers(input_string):
 
     return new_list
 
-print("banana bread turns into:")
-print(letters_to_numbers("banana bread"))
-
 print("asserting letters_to_numbers works on 'banana bread' ...")
 assert letters_to_numbers("banana bread") == [
     2, 1, 14, 1, 14, 1,
     0, 2, 18, 5, 1, 4], "no"
 print("PASSED")
+print(letters_to_numbers("banana bread"))
 
 print("\n")
-
 
 def numbers_to_letters(input_list):
     new_string = ""
@@ -33,11 +29,9 @@ def numbers_to_letters(input_list):
 
     return new_string
 
-print("[13, 18, 0, 19, 11, 25, 3, 1, 11] turns into:")
-print(numbers_to_letters([13, 18, 0, 19, 11, 25, 3, 1, 11]))
-
 print('''asserting numbers_to_letters works on
 [13, 18, 0, 19, 11, 25, 3, 1, 11] ...''')
 assert numbers_to_letters([
     13, 18, 0, 19, 11, 25, 3, 1, 11]) == "mr skycak", "Incorrect again."
 print("PASSED")
+print(numbers_to_letters([13, 18, 0, 19, 11, 25, 3, 1, 11]))
