@@ -21,7 +21,7 @@ colors = {
   'food_cheese': ['white', 'orange']
   }
 
-print("Asserting that 'make_nested' works on the input 'colors'")
+print("Asserting that 'make_nested' works on the input 'colors'...")
 assert make_nested(colors) == {
   'animal': {
     'bumblebee': ['yellow', 'black'],
