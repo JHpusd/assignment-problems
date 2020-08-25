@@ -11,8 +11,7 @@ def count_characters(input_string):
     print(user_dict)
     return user_dict
 
-print("Asserting that 'count_characters' works on 'Electric Eel!!!' ...")
-assert count_characters("Electric Eel!!!") == {
-    'e': 4, 'l': 2, 'c': 2, 't': 1, 
-    'r': 1, 'i': 1, ' ': 1, '!': 3}, "doesn't work"
+print("Asserting that 'count_characters' works on 'A Catl!!!' ...")
+assert count_characters("A Cat!!!") == {
+    'a': 2, ' ': 1, 'c': 1, 't': 1, '!': 3}, "doesn't work"
 print("PASSED")
