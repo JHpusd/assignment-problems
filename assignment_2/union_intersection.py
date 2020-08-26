@@ -8,7 +8,7 @@ def intersection(list_1, list_2):
 
 print('''Asserting that 'intersection' works on
 [1, 2, 'a', 'b'] and [2, 3, 'a'] ...''')
-assert intersection([1, 2, "a", "b"], [2, 3, "a"])
+assert intersection([1, 2, "a", "b"], [2, 3, "a"]) == [2, 'a'] or ['a', 2]
 print("PASSED")
 
 print("\n")
@@ -21,5 +21,7 @@ def union(list_1, list_2):
     return union_list
 
 print("Asserting that 'union' works on [1, 2, 'a', 'b'] and [2, 3, 'a'] ...")
-assert union([1, 2, "a", "b"], [2, 3, "a"])
+assert union([1, 2, "a", "b"], [2, 3, "a"]) == [1, 2, 3, 'a', 'b'] or [
+    1, 2, 'a', 3, 'b'
+]
 print("PASSED")
