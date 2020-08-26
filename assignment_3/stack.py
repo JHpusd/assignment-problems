@@ -1,13 +1,13 @@
 class Stack():
     def __init__(self):
         self.data = []
-    
+
     def push(self, push_value):
         self.data.append(push_value)
-    
+
     def pop(self):
         self.data.remove(self.data[-1])
-    
+
     def peek(self):
         return self.data[-1]
 
