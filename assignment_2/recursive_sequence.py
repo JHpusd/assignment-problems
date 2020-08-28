@@ -4,8 +4,8 @@ def first_n_terms(n):
     assert n > 0, "Number needs to be greater than zero"
     return_list = []
 
-    for intg in range(1, n):
-        if intg == 1:
+    for i in range(1, n):
+        if i == 1:
             previous = 5
             return_list.append(5)
         return_list.append(3*previous - 4)
