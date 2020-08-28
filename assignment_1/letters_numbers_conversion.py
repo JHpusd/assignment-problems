@@ -6,10 +6,12 @@ alph_list = [
 
 def letters_to_numbers(input_string):
     input_list = list(input_string)
-    new_list = []
+    #new_list = [] -- name too vague
+    result_list = []
 
     for char in input_list:
-        new_list.append(alph_list.index(char))
+        #new_list.append(alph_list.index(char))
+        result_list.append(alph_list.index(char))
 
     return new_list
 
