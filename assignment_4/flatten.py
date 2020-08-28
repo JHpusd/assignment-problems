@@ -2,7 +2,7 @@ def flatten(input_dict):
     final_dict = {}
 
     for dict_name in input_dict:
-        for key in colors[dict_name]:
+        for key in input_dict[dict_name]:
             final_dict[dict_name + "_" + key] = input_dict[dict_name][key]
 
     print(final_dict)
