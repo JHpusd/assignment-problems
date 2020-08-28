@@ -6,7 +6,8 @@ class Stack():
         self.data.append(push_value)
 
     def pop(self):
-        self.data.remove(self.data[-1])
+        #self.data.remove(self.data[-1]) -- original error
+        self.data = self.data[:-1]
 
     def peek(self):
         return self.data[-1]
