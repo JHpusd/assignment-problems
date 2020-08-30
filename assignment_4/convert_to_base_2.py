@@ -3,6 +3,7 @@ import math
 
 def convert_to_base_2(input_dec):
     number = input_dec
+    assert number > 0, "number needs to be greater than zero"
     result_list = []
 
     terms = math.floor(math.log(input_dec, 2)) + 1
@@ -10,12 +11,12 @@ def convert_to_base_2(input_dec):
         result_list.append(0)
 
     while number >= 1:
-        replace_term = -math.floor(math.log(number, 2))
+        replace_term = -(math.floor(math.log(number, 2)) + 1)
         number -= 2 ** math.floor(math.log(number, 2))
         result_list[replace_term] = 1
 
     result_string = ""
-    for num in result_list[::-1]:
+    for num in result_list:
         result_string += str(num)
         result_integer = int(result_string)
 
