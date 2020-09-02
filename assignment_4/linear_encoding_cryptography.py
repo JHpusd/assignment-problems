@@ -24,10 +24,10 @@ def decode(numbers, a, b):
 
     for num in numbers:
         if (num - b)/a < 0:
-            print(False)  # turn this into a comment when doing part c
+            # print(False)
             return False
         if int((num - b)/a) != (num - b)/a:
-            print(False)  # this one too
+            # print(False)
             return False
         temp_list.append(int((num - b)/a))
 
