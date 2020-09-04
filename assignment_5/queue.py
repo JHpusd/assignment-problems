@@ -6,7 +6,7 @@ class Queue():
         self.data.append(queue_value)
 
     def dequeue(self):
-        self.data = self.data[0:]
+        self.data = self.data[1:]
 
     def peek(self):
         return self.data[0]
@@ -22,3 +22,4 @@ q.dequeue()
 assert q.data == ['b', 'c']
 assert q.peek() == 'b'
 assert q.data == ['b', 'c']
+print("ALL PASSED")
