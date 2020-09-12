@@ -1,0 +1,14 @@
+Free Response:
+a. Given a list of 5 elements, what’s the least number of swaps that could occur?What about for a list of  n  elements? Explain why.
+The least number of swaps that could happen in any list is zero. This would be the case if all of the numbers were already in the correct order. The same would apply for a list of n elements.
+
+b. Given a list of 5 elements, what’s the greatest number of swaps that could occur? What about for a list of  n  elements? Explain why.
+In a list of five terms, the most possible swaps is 4 + 3 + 2 + 1 (10 swaps). This would be the case if the numbers were ordered so that the largest number was in the first spot, second largest in the second spot, etc. So now that we know this, we can easily figure out the most swaps for a list of n elements. The most swaps for a list of n elements is (n-1) + (n-2) + (n-3) + ... + 1. 
+
+
+True or False:
+c. The number of swaps performed by swap sort on each pass is always a decreasing sequence.
+True. If we take a look at the two most important numbers (the largest and second largest numbers), we can encapsulate the concept that can be used to solve this. If the second largest number is before the largest number, it will be swapped until is next to the largest number. The largest number will then be swapped until it is at the end of the list. This makes it so that the second largest number will not be able to move as far since the last space is secured. If the largest number is before the second largest, we simply just skip the first step of moving the second largest number. After the largest number is in the last spot, we would look at the third and second largest numbers, again repeating the cycle. (This is a pretty bad explanation, I didn't know how to explain this)
+
+d. On two consecutive passes, the number of swaps performed by swap sort is never equal.
+False. The list [5, 8, 2, 2, 4, 3, 0] is an example of this. (Stolen from you)

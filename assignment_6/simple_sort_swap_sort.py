@@ -18,7 +18,7 @@ print("\n")
 
 
 def swap_sort(num_list):
-    while min(num_list) != num_list[0]:
+    for n in num_list:
         for i in range(0, len(num_list) - 1):
             current_term = num_list[i]
             next_term = num_list[i + 1]
