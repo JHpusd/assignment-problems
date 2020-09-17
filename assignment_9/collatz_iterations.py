@@ -17,14 +17,14 @@ print("Testing that 'collatz_iterations' works...")
 assert collatz_iterations(13) == 9
 print("PASSED")
 
-
+'''
 ref_num = 0
 for i in range(1, 1001):
     if collatz_iterations(i) > ref_num:
         ref_num = collatz_iterations(i)
         print(i)
 print("most collatz_iterations: {}".format(ref_num))
-'''
+
 # From 1-1000, 871 has the highest amount of 
 collatz iterations with 178 iterations. 
 '''
