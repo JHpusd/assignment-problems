@@ -21,9 +21,9 @@ print("PASSED")
 print("\n")
 '''
 
-def monte_carlo_probability(num_heads, num_flips):
+def monte_carlo_probability(num_heads, num_flips, num_sample):
     success = 0
-    for i in range(1000):
+    for i in range(num_sample):
         flip_list = []
         for n in range(num_flips):
             flip_result = round(random())
@@ -33,7 +33,7 @@ def monte_carlo_probability(num_heads, num_flips):
                 flip_list.append("T")
         if flip_list.count("H") == num_heads:
             success += 1
-    return (success/1000)
+    return (success/num_sample)
 '''
 print("Monte Carlo probabilities for 5 heads out of 8 flips:")
 for i in range(5):
