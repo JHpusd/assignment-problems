@@ -28,6 +28,7 @@ class Rectangle():
         y.append(0)
         plt.style.use('bmh')
         plt.figure(0)
+        plt.gca().set_aspect("equal")
         plt.plot(x, y, color=self.color, linewidth=2.5)
         plt.savefig("rectangle.png")
 
@@ -64,6 +65,7 @@ class Triangle():
         y.append(0)
         plt.style.use('bmh')
         plt.figure(1)
+        plt.gca().set_aspect("equal")
         plt.plot(x, y, color=self.color, linewidth=2.5)
         plt.savefig("triangle.png")
 
