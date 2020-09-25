@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 from math import sqrt
 
+
 class Rectangle():
     def __init__(self, base, height, color):
         self.base = base
@@ -10,13 +11,13 @@ class Rectangle():
         self.area = self.base * self.height
         self.vertices = [
             (0, 0), (0, self.height), (self.base, self.height), (self.base, 0)]
-    
+
     def describe(self):
         print(
             '''Base: {}\nHeight: {}\nColor: {}\nPerimeter: {}\nArea: {}\nVertices: {}'''.format(
             self.base, self.height, self.color,
             self.perimeter, self.area, self.vertices))
-    
+
     def render(self):
         x = []
         y = []
@@ -36,6 +37,7 @@ rect.describe()
 rect.render()
 print("\n")
 
+
 class Triangle():
     def __init__(self, base, height, color):
         self.base = base
@@ -45,13 +47,13 @@ class Triangle():
             self.base**2 + self.height**2)
         self.area = round((self.base * self.height / 2), 6)
         self.vertices = [(0, 0), (0, self.height), (self.base, 0)]
-    
+
     def describe(self):
         print(
             '''Base: {}\nHeight: {}\nColor: {}\nPerimeter: {}\nArea: {}\nVertices: {}'''.format(
             self.base, self.height, self.color,
             self.perimeter, self.area, self.vertices))
-    
+
     def render(self):
         x = []
         y = []
