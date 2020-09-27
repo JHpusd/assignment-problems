@@ -31,13 +31,13 @@ class Rectangle():
         plt.gca().set_aspect("equal")
         plt.plot(x, y, color=self.color, linewidth=2.5)
         plt.savefig("rectangle.png")
-
+'''
 print("Testing class 'Rectangle'...")
 rect = Rectangle(5, 2, "red")
 rect.describe()
 rect.render()
 print("\n")
-
+'''
 
 class Triangle():
     def __init__(self, base, height, color):
@@ -68,8 +68,22 @@ class Triangle():
         plt.gca().set_aspect("equal")
         plt.plot(x, y, color=self.color, linewidth=2.5)
         plt.savefig("triangle.png")
-
+'''
 print("Testing class 'Triangle'...")
 tri = Triangle(5, 2, "blue")
 tri.describe()
 tri.render()
+'''
+
+# 13-1
+
+class Square(Rectangle):
+    def __init__(self, base, color):
+        self.base = base
+        height = self.base
+        super().__init__(base, height, color)
+
+print("Testing class 'Square'...")
+sq = Square(5, 'green')
+sq.describe()
+sq.render()
