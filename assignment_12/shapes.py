@@ -79,9 +79,10 @@ tri.render()
 
 class Square(Rectangle):
     def __init__(self, base, color):
-        self.base = base
-        height = self.base
-        super().__init__(base, height, color)
+        # self.base = base
+        # height = self.base
+        # super().__init__(base, height, color)
+        super().__init__(base, base, color)
 
 print("Testing class 'Square'...")
 sq = Square(5, 'green')
