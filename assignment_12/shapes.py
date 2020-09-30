@@ -28,6 +28,7 @@ class Shape():
         plt.gca().set_aspect("equal")
         plt.plot(x, y, color=self.color, linewidth=2.5)
         plt.savefig("shape.png")
+        plt.clf()
 
 
 class Rectangle(Shape):
