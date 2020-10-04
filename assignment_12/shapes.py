@@ -55,7 +55,6 @@ class Triangle(Shape):
         self.area = round((self.base * self.height / 2), 6)
         self.vertices = [(0, 0), (0, self.height), (self.base, 0)]
 
-
 print("Testing class 'Triangle'...")
 tri = Triangle(5, 2, "blue")
 tri.describe()
