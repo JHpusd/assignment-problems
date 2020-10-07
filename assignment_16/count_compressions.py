@@ -1,15 +1,14 @@
 
 def count_compression(string):
-    ref_list = list(string)
-    current_term = ref_list[0]
+    current_term = string[0]
     new_list = []
-    for i in range(len(ref_list)):
-        if ref_list[i] != current_term:
-            current_term = ref_list[i]
+    for char in string:
+        if char != current_term:
+            current_term = char
             new_list.append(" ")
-            new_list.append(ref_list[i])
+            new_list.append(char)
         else:
-            new_list.append(ref_list[i])
+            new_list.append(char)
     splitting_string = ""
     for element in new_list:
         splitting_string += element
