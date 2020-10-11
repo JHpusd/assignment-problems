@@ -14,7 +14,7 @@ def kl_divergence(p, q):
             continue
         result += p_term * log(p_term/q_term)
     return round(result, 6)
-
+'''
 p = [0.2, 0.5, 0, 0.3]
 q = [0.1, 0.8, 0.1, 0]
 print("Asserting that 'kl_divergence' works...")
@@ -43,7 +43,7 @@ for i in range(9):
     p.append(monte_carlo_probability(i, 8, 10000))
 print("KL Divergence = " + str(kl_divergence(p, q)))
 
-'''
+
 As the number of samples increases, the KL divergence approaches 0
 because the error is lowered.
 '''
