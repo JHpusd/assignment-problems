@@ -47,9 +47,33 @@ class LinkedList():
         for i in range(index):
             ref_node = ref_node.next
         return ref_node.data
+    
+    def delete(self, index):
+        ref_node = self.head
+        for i in range(index):
+            ref_node = ref_node.next
+        for i in range(index, self.length() - 1):
+            ref_node.data = ref_node.next.data
+            if ref_node.index == self.length() - 2:
+                ref_node.next = None
+            ref_node = ref_node.next
+    
+    def insert(self, new_data, index):
+        ref_node = self.head
+        for i in range(index):
+            ref_node = ref_node.next
+        for i in range(index, self.length() - 1):
+            value = ref_node.data
+            next_value = ref_node.next.data
+            if i == index:
+                ref_node.data = new_data
+            ref_node.next.data = value
+            ref_node = ref_node.next
+        self.append(next_value)
 
+'''
 print("Testing class 'Node()'...")
-A = Node(4, None)
+A = Node(4, None)s
 assert A.data == 4
 assert A.next == None
 B = Node(8, None)
@@ -88,3 +112,29 @@ assert linked_list.get_node(1) == 'b'
 assert linked_list.get_node(2) == 'e'
 assert linked_list.get_node(3) == 'f'
 print("PASSED")
+'''
+print("Testing methods 'delete'...")
+print(" ")
+print("Before delete")
+linked_list = LinkedList('a')
+linked_list.append('b')
+linked_list.append('c')
+linked_list.append('d')
+linked_list.append('e')
+print("list length:" + str(linked_list.length()))
+linked_list.print_data()
+print("Node at index 2: " + linked_list.get_node(2))
+linked_list.delete(2)
+print(" ")
+print("After delete")
+print("list length: " + str(linked_list.length()))
+print("Node at index 2: " + linked_list.get_node(2))
+linked_list.print_data()
+print("\n")
+print("Testing method 'insert'...")
+print(" ")
+print("Above list after insert")
+linked_list.insert("f", 2)
+print("length: " + str(linked_list.length()))
+print("Node at index 2: " + linked_list.get_node(2))
+linked_list.print_data()
