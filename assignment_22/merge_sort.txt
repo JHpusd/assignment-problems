@@ -1,0 +1,36 @@
+input list: [4,8,7,7,4,2,3,1]
+halved: [4, 8, 7, 7], [4, 2, 3, 1]
+recursively sorting:
+
+    input list: [4, 8, 7, 7]
+    halved: [4, 8], [7, 7]
+    recursively sorting:
+
+        input list: [4, 8]
+        halved: [4], [8]
+        each half is one element, so we merge them to get [4, 8]
+
+        input list: [7, 7]
+        halved: [4, 8]
+        each half is one element, so they merge to get [7, 7]
+    
+    now that we have 2 lists [4, 8] and [7, 7], we can merge them to get
+    [4, 7, 7, 8]
+
+    input list: [4, 2, 3, 1]
+    halved: [4, 2], [3, 1]
+    recursively sorting:
+
+        input list: [4, 2]
+        halved: [4], [2]
+        each half is one element, so we can merge them to get [2, 4]
+
+        input list: [3, 1]
+        halved: [3], [1]
+        each half is one element, so we can merge them to get [1, 3]
+
+    now that we have 2 lists [2, 4] and [1, 3], we can merge them to get
+    [1, 2, 3, 4]
+
+now that we have 2 lists [4, 7, 7, 8] and [1, 2, 3, 4], we can merge them to get
+[1, 2, 3, 4, 4, 7, 7, 8]
