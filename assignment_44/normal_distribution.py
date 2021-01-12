@@ -55,7 +55,10 @@ assert round(calc_snd(-3,3), 3) == 0.997
 
 n_list = []
 for i in range(2, 101):
-    n_list.append(i)
+    if i % 2 == 0:
+        n_list.append(i)
+    else:
+        continue
 
 plt.style.use('bmh')
 
