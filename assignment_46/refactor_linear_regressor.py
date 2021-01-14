@@ -9,7 +9,7 @@ def calculate_coefficients(self):
       mat.append(list(self.df.data_dict.values())[row][0])
     mat = Matrix(mat)
     mat = mat.transpose()
-    mat_pseudoinv = mat.transpose().matrix_multiply(mat).inverse().matrix_multiply(mat_t)
+    mat_pseudoinv = ((mat.transpose() @ (mat)).inverse()) @ (mat_t)
     multiplier = [[num] for num in list(self.df.data_dict.values())[1][0]]
     multiplier_mat = mat_pseudoinv.matrix_multiply(Matrix(multiplier))
     for num in range(len(multiplier_mat.elements)):
