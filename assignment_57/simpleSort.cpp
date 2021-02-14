@@ -5,11 +5,12 @@ int main()
     int arr[5]{ 30, 50, 20, 10, 40 };
 
     int counter = 0;
+    int len = sizeof(arr)/sizeof(arr[0]);
 
-    for (int n = 0; n <= 4; n++){
+    for (int n = 0; n <= (len-1); n++){
         int smallestVal = arr[counter];
         int smallestIndex = counter;
-        for (int i = counter; i <= 4; i++){
+        for (int i = counter; i <= (len-1); i++){
             if (arr[i] < smallestVal){
                 smallestIndex = i;
                 smallestVal = arr[i];
